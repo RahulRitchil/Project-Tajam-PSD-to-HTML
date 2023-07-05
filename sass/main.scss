@@ -1,0 +1,86 @@
+.wrapper {
+  position: relative;
+  width: 320px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  
+  .butto {
+    width: 320px;
+    height: 50px;
+  }
+  
+  .borde{
+    background : rgb(198, 196, 201);
+  }
+
+  .to {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    opacity: 0;
+    transition: all .2s linear .3s;
+  }
+  
+  &:hover .to {
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: all .2s linear;
+  }
+
+  .righ {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 2px;
+    height: 0;
+    margin: auto;
+    transition: all .1s linear .2s;
+    }
+  
+  .lef {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 2px;
+    height: 0;
+    margin: auto;
+    transition: all .1s linear .2s;
+  }
+  
+  &:hover .righ, &:hover .lef {
+    transition: all .1s linear .2s;
+    height: 100%;
+  }
+
+  .bottom-lef {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    transition: all .2s linear;
+  }
+  
+  .bottom-righ {
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    width: 0;
+    height: 2px;    
+    margin: auto;
+    transition: all .2s linear;
+  }
+  
+  &:hover .bottom-lef, &:hover .bottom-righ {
+    transition: all .2s linear .3s;
+    width: 100%;
+  }
+  
+}
